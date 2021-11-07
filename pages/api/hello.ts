@@ -10,6 +10,7 @@ export default function handler(
   res: NextApiResponse<Data>
 ) {
   if (req.method === "GET") {
+    console.log("Esto es un código servidor")
     res.status(200).json({name:"Hice una petición GET"})
   }
   if (req.method === "POST") {
