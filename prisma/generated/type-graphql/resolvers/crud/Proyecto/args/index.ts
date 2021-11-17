@@ -1,0 +1,12 @@
+export { AggregateProyectoArgs } from "./AggregateProyectoArgs";
+export { CreateManyProyectoArgs } from "./CreateManyProyectoArgs";
+export { CreateProyectoArgs } from "./CreateProyectoArgs";
+export { DeleteManyProyectoArgs } from "./DeleteManyProyectoArgs";
+export { DeleteProyectoArgs } from "./DeleteProyectoArgs";
+export { FindFirstProyectoArgs } from "./FindFirstProyectoArgs";
+export { FindManyProyectoArgs } from "./FindManyProyectoArgs";
+export { FindUniqueProyectoArgs } from "./FindUniqueProyectoArgs";
+export { GroupByProyectoArgs } from "./GroupByProyectoArgs";
+export { UpdateManyProyectoArgs } from "./UpdateManyProyectoArgs";
+export { UpdateProyectoArgs } from "./UpdateProyectoArgs";
+export { UpsertProyectoArgs } from "./UpsertProyectoArgs";

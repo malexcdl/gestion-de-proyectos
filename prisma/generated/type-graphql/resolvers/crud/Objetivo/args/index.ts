@@ -1,0 +1,12 @@
+export { AggregateObjetivoArgs } from "./AggregateObjetivoArgs";
+export { CreateManyObjetivoArgs } from "./CreateManyObjetivoArgs";
+export { CreateObjetivoArgs } from "./CreateObjetivoArgs";
+export { DeleteManyObjetivoArgs } from "./DeleteManyObjetivoArgs";
+export { DeleteObjetivoArgs } from "./DeleteObjetivoArgs";
+export { FindFirstObjetivoArgs } from "./FindFirstObjetivoArgs";
+export { FindManyObjetivoArgs } from "./FindManyObjetivoArgs";
+export { FindUniqueObjetivoArgs } from "./FindUniqueObjetivoArgs";
+export { GroupByObjetivoArgs } from "./GroupByObjetivoArgs";
+export { UpdateManyObjetivoArgs } from "./UpdateManyObjetivoArgs";
+export { UpdateObjetivoArgs } from "./UpdateObjetivoArgs";
+export { UpsertObjetivoArgs } from "./UpsertObjetivoArgs";

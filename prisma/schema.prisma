@@ -5,6 +5,12 @@ generator client {
     provider = "prisma-client-js"
 }
 
+generator typegraphql {
+    provider = "typegraphql-prisma"
+    output = "../prisma/generated/type-graphql"
+    emitTransparentCode = true
+}
+
 datasource db {
     provider = "postgresql"
     url      = env("DATABASE_URL")
@@ -49,25 +55,26 @@ model Usuario {
     nombre             String
     apellido           String
     identificacion     String             @unique
+    telefono           String?
     rol                Enum_Rol
     estado             Enum_EstadoUsuario
     proyectosLiderados Proyecto[]
     avancesCreados     Avance[]
-    inscripciones        Inscripcion[]
+    inscripciones      Inscripcion[]
 }
 
 model Proyecto {
-    id          String              @id @default(cuid())
-    nombre      String
-    presupuesto Float
-    fechaInicio DateTime
-    fechaFin    DateTime
-    lider       Usuario             @relation(fields: [usuarioId], references: [id])
-    usuarioId   String
-    estado      Enum_EstadoProyecto
-    fase        Enum_FaseProyecto
-    objetivos   Objetivo[]
-    avances     Avance[]
+    id            String              @id @default(cuid())
+    nombre        String
+    presupuesto   Float
+    fechaInicio   DateTime
+    fechaFin      DateTime
+    lider         Usuario             @relation(fields: [usuarioId], references: [id])
+    usuarioId     String
+    estado        Enum_EstadoProyecto
+    fase          Enum_FaseProyecto
+    objetivos     Objetivo[]
+    avances       Avance[]
     inscripciones Inscripcion[]
 }
 

@@ -1,0 +1,12 @@
+export { AggregateInscripcionArgs } from "./AggregateInscripcionArgs";
+export { CreateInscripcionArgs } from "./CreateInscripcionArgs";
+export { CreateManyInscripcionArgs } from "./CreateManyInscripcionArgs";
+export { DeleteInscripcionArgs } from "./DeleteInscripcionArgs";
+export { DeleteManyInscripcionArgs } from "./DeleteManyInscripcionArgs";
+export { FindFirstInscripcionArgs } from "./FindFirstInscripcionArgs";
+export { FindManyInscripcionArgs } from "./FindManyInscripcionArgs";
+export { FindUniqueInscripcionArgs } from "./FindUniqueInscripcionArgs";
+export { GroupByInscripcionArgs } from "./GroupByInscripcionArgs";
+export { UpdateInscripcionArgs } from "./UpdateInscripcionArgs";
+export { UpdateManyInscripcionArgs } from "./UpdateManyInscripcionArgs";
+export { UpsertInscripcionArgs } from "./UpsertInscripcionArgs";
