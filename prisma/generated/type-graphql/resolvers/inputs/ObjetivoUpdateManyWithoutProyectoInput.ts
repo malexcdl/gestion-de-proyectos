@@ -38,11 +38,6 @@ export class ObjetivoUpdateManyWithoutProyectoInput {
   @TypeGraphQL.Field(_type => [ObjetivoWhereUniqueInput], {
     nullable: true
   })
-  connect?: ObjetivoWhereUniqueInput[] | undefined;
-
-  @TypeGraphQL.Field(_type => [ObjetivoWhereUniqueInput], {
-    nullable: true
-  })
   set?: ObjetivoWhereUniqueInput[] | undefined;
 
   @TypeGraphQL.Field(_type => [ObjetivoWhereUniqueInput], {
@@ -54,6 +49,11 @@ export class ObjetivoUpdateManyWithoutProyectoInput {
     nullable: true
   })
   delete?: ObjetivoWhereUniqueInput[] | undefined;
+
+  @TypeGraphQL.Field(_type => [ObjetivoWhereUniqueInput], {
+    nullable: true
+  })
+  connect?: ObjetivoWhereUniqueInput[] | undefined;
 
   @TypeGraphQL.Field(_type => [ObjetivoUpdateWithWhereUniqueWithoutProyectoInput], {
     nullable: true

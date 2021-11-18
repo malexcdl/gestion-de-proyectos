@@ -63,7 +63,7 @@ export class Proyecto {
   inscripciones?: Inscripcion[];
 
   @TypeGraphQL.Field(_type => ProyectoCount, {
-    nullable: true
+    nullable: false
   })
-  _count?: ProyectoCount | null;
+  _count!: ProyectoCount;
 }

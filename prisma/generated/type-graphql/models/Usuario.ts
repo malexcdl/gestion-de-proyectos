@@ -60,7 +60,7 @@ export class Usuario {
   inscripciones?: Inscripcion[];
 
   @TypeGraphQL.Field(_type => UsuarioCount, {
-    nullable: true
+    nullable: false
   })
-  _count?: UsuarioCount | null;
+  _count!: UsuarioCount;
 }

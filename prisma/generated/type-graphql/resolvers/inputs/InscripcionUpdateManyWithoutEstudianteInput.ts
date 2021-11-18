@@ -38,11 +38,6 @@ export class InscripcionUpdateManyWithoutEstudianteInput {
   @TypeGraphQL.Field(_type => [InscripcionWhereUniqueInput], {
     nullable: true
   })
-  connect?: InscripcionWhereUniqueInput[] | undefined;
-
-  @TypeGraphQL.Field(_type => [InscripcionWhereUniqueInput], {
-    nullable: true
-  })
   set?: InscripcionWhereUniqueInput[] | undefined;
 
   @TypeGraphQL.Field(_type => [InscripcionWhereUniqueInput], {
@@ -54,6 +49,11 @@ export class InscripcionUpdateManyWithoutEstudianteInput {
     nullable: true
   })
   delete?: InscripcionWhereUniqueInput[] | undefined;
+
+  @TypeGraphQL.Field(_type => [InscripcionWhereUniqueInput], {
+    nullable: true
+  })
+  connect?: InscripcionWhereUniqueInput[] | undefined;
 
   @TypeGraphQL.Field(_type => [InscripcionUpdateWithWhereUniqueWithoutEstudianteInput], {
     nullable: true

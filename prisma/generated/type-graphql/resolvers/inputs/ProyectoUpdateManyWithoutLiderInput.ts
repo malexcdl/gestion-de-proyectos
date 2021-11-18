@@ -38,11 +38,6 @@ export class ProyectoUpdateManyWithoutLiderInput {
   @TypeGraphQL.Field(_type => [ProyectoWhereUniqueInput], {
     nullable: true
   })
-  connect?: ProyectoWhereUniqueInput[] | undefined;
-
-  @TypeGraphQL.Field(_type => [ProyectoWhereUniqueInput], {
-    nullable: true
-  })
   set?: ProyectoWhereUniqueInput[] | undefined;
 
   @TypeGraphQL.Field(_type => [ProyectoWhereUniqueInput], {
@@ -54,6 +49,11 @@ export class ProyectoUpdateManyWithoutLiderInput {
     nullable: true
   })
   delete?: ProyectoWhereUniqueInput[] | undefined;
+
+  @TypeGraphQL.Field(_type => [ProyectoWhereUniqueInput], {
+    nullable: true
+  })
+  connect?: ProyectoWhereUniqueInput[] | undefined;
 
   @TypeGraphQL.Field(_type => [ProyectoUpdateWithWhereUniqueWithoutLiderInput], {
     nullable: true

@@ -38,11 +38,6 @@ export class AvanceUpdateManyWithoutProyectoInput {
   @TypeGraphQL.Field(_type => [AvanceWhereUniqueInput], {
     nullable: true
   })
-  connect?: AvanceWhereUniqueInput[] | undefined;
-
-  @TypeGraphQL.Field(_type => [AvanceWhereUniqueInput], {
-    nullable: true
-  })
   set?: AvanceWhereUniqueInput[] | undefined;
 
   @TypeGraphQL.Field(_type => [AvanceWhereUniqueInput], {
@@ -54,6 +49,11 @@ export class AvanceUpdateManyWithoutProyectoInput {
     nullable: true
   })
   delete?: AvanceWhereUniqueInput[] | undefined;
+
+  @TypeGraphQL.Field(_type => [AvanceWhereUniqueInput], {
+    nullable: true
+  })
+  connect?: AvanceWhereUniqueInput[] | undefined;
 
   @TypeGraphQL.Field(_type => [AvanceUpdateWithWhereUniqueWithoutProyectoInput], {
     nullable: true
